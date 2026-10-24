@@ -1,0 +1,41 @@
+.form-management-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding-top: 14px;
+    margin: 14px 0;
+    border-top: 1px solid #e1e9ef;
+}
+
+.form-management-actions form {
+    margin: 0;
+}
+
+.form-management-actions button,
+.form-management-actions a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 12px;
+    border: 1px solid #d4e1eb;
+    border-radius: 6px;
+    background: #fff;
+    color: #294f6b;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-management-actions button:hover {
+    background: #eaf2f7;
+}
+
+.form-management-actions .form-delete-action {
+    color: #9a3e3e;
+    border-color: #ead1d1;
+}
+
+.form-management-actions .form-delete-action:hover {
+    background: #fbeeee;
+}

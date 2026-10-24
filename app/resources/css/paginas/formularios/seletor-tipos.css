@@ -1,0 +1,126 @@
+.question-title-row {
+    grid-template-columns: minmax(0, 1fr) 240px;
+}
+
+.type-picker {
+    display: block;
+    position: relative;
+    margin-top: 7px;
+    font-weight: 400;
+}
+
+.type-picker-trigger {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    min-height: 46px;
+    padding: 11px 12px;
+    background: #fff;
+    border: 1px solid #b9cddd;
+    border-radius: 7px;
+    color: #29465d;
+    font: inherit;
+    font-size: 13px;
+    text-align: left;
+    cursor: pointer;
+    transition: border-color .15s, background .15s;
+}
+
+.type-picker-trigger > svg {
+    flex-shrink: 0;
+    color: #66869f;
+}
+
+.type-picker-trigger:hover {
+    border-color: #789bb6;
+    background: #f6f9fc;
+}
+
+.type-picker-trigger[aria-expanded="true"] {
+    border-color: #557f9f;
+    box-shadow: 0 0 0 3px #557f9f14;
+}
+
+.type-picker-chevron {
+    display: flex;
+    margin-left: auto;
+    color: #7893a8;
+    transition: transform .15s;
+}
+
+.type-picker-trigger[aria-expanded="true"] .type-picker-chevron {
+    transform: rotate(180deg);
+}
+
+.type-picker-menu {
+    position: absolute;
+    display: block;
+    top: calc(100% + 7px);
+    right: 0;
+    width: 285px;
+    max-width: min(285px, calc(100vw - 64px));
+    max-height: 380px;
+    overflow-y: auto;
+    padding: 7px;
+    border: 1px solid #d3e0ea;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 10px 30px #203b5024;
+    z-index: 40;
+    scrollbar-width: thin;
+    scrollbar-color: #bdcedc transparent;
+}
+
+.type-picker-option {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    min-height: 42px;
+    padding: 11px 12px;
+    border-radius: 5px;
+    color: #486479;
+    font-size: 13px;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.type-picker-option > svg {
+    flex-shrink: 0;
+    color: #7892a6;
+}
+
+.type-picker-option.new-group {
+    border-top: 1px solid #e5edf3;
+    margin-top: 6px;
+    padding-top: 14px;
+}
+
+.type-picker-option.is-active {
+    background: #f0f5fa;
+    color: #294f6b;
+}
+
+.type-picker-option[aria-selected="true"] {
+    background: #e5eff7;
+    color: #254f6e;
+    font-weight: 600;
+}
+
+.type-picker-option[aria-selected="true"] > svg {
+    color: #376b93;
+}
+
+@media (max-width: 650px) {
+    .question-title-row {
+        grid-template-columns: 1fr;
+    }
+
+    .type-picker-menu {
+        left: 0;
+        right: auto;
+        width: 100%;
+        max-width: 100%;
+        max-height: 320px;
+    }
+}

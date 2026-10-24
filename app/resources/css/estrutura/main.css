@@ -1,0 +1,115 @@
+:root {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: #182d43;
+    background: #f5f8fa;
+    font-synthesis: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+    max-width: 1120px;
+    margin: 56px auto;
+    flex: 1;
+    padding: 0 24px;
+}
+
+.card {
+    padding: 40px;
+    background: #fff;
+    border: 1px solid #dce4ed;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px #18314f08;
+}
+
+.eyebrow {
+    display: block;
+    font-size: 12px;
+    letter-spacing: .1em;
+    font-weight: 750;
+    color: #225b85;
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 14px;
+}
+
+h2 {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+p {
+    color: #526479;
+    line-height: 1.6;
+    margin: 0 0 24px;
+}
+
+.button {
+    font: inherit;
+    font-weight: 650;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 12px 22px;
+    background: #174e79;
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #103b5d;
+}
+
+.button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #83b9ed;
+    outline-offset: 3px;
+}
+
+.secondary {
+    background: #fff;
+    color: #174e79;
+    border-color: #a7b7c8;
+}
+
+.secondary:hover {
+    background: #edf3f9;
+}
+
+@media (max-width: 540px) {
+
+    main {
+        margin: 32px auto;
+        padding: 0 16px;
+    }
+
+    .card {
+        padding: 26px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
+
+.guest-layout main {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}

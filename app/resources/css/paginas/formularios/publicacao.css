@@ -1,0 +1,246 @@
+.publication-deadline {
+    display: grid;
+    gap: 9px;
+    margin-top: 22px;
+    padding-top: 20px;
+    border-top: 1px solid #e1e9ef;
+}
+
+.publication-deadline label,
+.deadline-title {
+    color: #395970;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.deadline-title > span {
+    color: #60798e;
+    font-weight: 400;
+}
+
+.deadline-fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.deadline-fields > div {
+    display: grid;
+    gap: 8px;
+    flex: 1 1 160px;
+    max-width: 220px;
+}
+
+.publication-deadline input {
+    width: 100%;
+    max-width: 340px;
+    padding: 12px;
+    border: 1px solid #bfd0de;
+    border-radius: 6px;
+    color: #294f6b;
+    background: #fff;
+    font-size: 14px;
+}
+
+.publication-deadline small {
+    color: #60798e;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.publication-deadline .deadline-expired {
+    margin: 4px 0 0;
+    color: #8a4c2a;
+    font-size: 13px;
+}
+
+.access-identifier-settings {
+    margin: 14px 0 0 42px;
+    padding: 16px;
+    border-left: 3px solid #8daec8;
+    background: #f5f8fb;
+}
+
+.access-identifier-settings[hidden] {
+    display: none;
+}
+
+.access-identifier-settings label {
+    display: block;
+    margin-bottom: 8px;
+    color: #395970;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.access-identifier-settings select {
+    width: 100%;
+    max-width: 320px;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #bfd0de;
+    border-radius: 6px;
+    background: #fff;
+    color: #294f6b;
+    font-size: 14px;
+}
+
+.publication-access .access-history-note {
+    margin-top: 16px;
+    line-height: 1.6;
+}
+
+.publication-panel,
+.publication-access {
+    padding: 24px;
+    margin-bottom: 22px;
+    border: 1px solid #c5d6e3;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.publication-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+.publication-panel h2,
+.publication-access h2 {
+    font-size: 17px;
+    margin: 0 0 8px;
+    color: #29465d;
+}
+
+.publication-panel p,
+.publication-access > p {
+    font-size: 12px;
+    color: #60798e;
+    margin: 0;
+}
+
+.publication-panel .button {
+    font-size: 12px;
+    white-space: nowrap;
+    background: #294f6b;
+}
+
+.publication-close {
+    padding: 10px 14px;
+    border: 1px solid #d0a7a2;
+    border-radius: 6px;
+    background: #fff6f5;
+    color: #993c37;
+    font-size: 12px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.publication-close:hover {
+    background: #fce6e3;
+}
+
+.publication-panel .publication-hint {
+    font-size: 11px;
+    color: #6f8495;
+}
+
+.share-label {
+    display: block;
+    margin: 22px 0 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #466781;
+}
+
+.share-link-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.share-link-row input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #bfd0de;
+    border-radius: 6px;
+    background: #f5f8fb;
+    font-size: 12px;
+    color: #466781;
+}
+
+.share-link-row a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #294f6b;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.publication-panel .copy-feedback {
+    margin-top: 10px;
+    color: #376248;
+    font-size: 11px;
+}
+
+.publication-access > label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px;
+    margin-top: 14px;
+    border: 1px solid #dce5ed;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.publication-access > label:has(input:checked) {
+    background: #edf4fa;
+    border-color: #8daec8;
+}
+
+.publication-access input {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    accent-color: #294f6b;
+    flex-shrink: 0;
+}
+
+.publication-access strong {
+    display: block;
+    color: #395970;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.publication-access small {
+    display: block;
+    color: #60798e;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+@media (max-width: 650px) {
+    .publication-heading,
+    .share-link-row {
+        flex-wrap: wrap;
+    }
+
+    .publication-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .share-link-row input {
+        flex-basis: 100%;
+    }
+
+    .publication-panel,
+    .publication-access {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,98 @@
+.editor-message {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 20px;
+    margin-bottom: 24px;
+    border: 1px solid #d9c29b;
+    border-left: 4px solid #b88736;
+    border-radius: 9px;
+    background: #fff8eb;
+    color: #654b26;
+}
+
+.editor-message strong {
+    display: block;
+    font-size: 16px;
+}
+
+.editor-message p {
+    margin: 6px 0 0;
+    font-size: 14px;
+    color: #755d3b;
+}
+
+.editor-message button,
+.editor-link-actions button {
+    padding: 10px 16px;
+    border: 1px solid #b9cddd;
+    border-radius: 6px;
+    background: #fff;
+    color: #294f6b;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.editor-link-dialog {
+    width: min(460px, calc(100% - 32px));
+    padding: 28px;
+    margin: auto;
+    border: 1px solid #c7d9e7;
+    border-radius: 12px;
+    background: #fff;
+    color: #203b50;
+    box-shadow: 0 20px 60px #102b4030;
+}
+
+.editor-link-dialog::backdrop {
+    background: #102b4070;
+}
+
+.editor-link-dialog h2 {
+    margin: 0 0 10px;
+    font-size: 22px;
+}
+
+.editor-link-dialog p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.editor-link-dialog label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.editor-link-dialog input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b9cddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.editor-link-dialog [role="alert"] {
+    display: block;
+    margin-top: 8px;
+    color: #9a3e3e;
+    font-size: 13px;
+}
+
+.editor-link-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.editor-link-actions button[type="submit"] {
+    background: #294f6b;
+    color: #fff;
+    border-color: #294f6b;
+}
